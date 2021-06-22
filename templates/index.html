@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Home</title>
+</head>
+<style>
+    body {
+     background-image: url('https://media.giphy.com/media/l0HlKQPTHOGNUPTZm/giphy.gif');
+     background-position: center;
+     background-size: cover;
+     }
+ 
+     .img_holder img{
+         max-width: 100%; max-height: 100%;
+     }
+
+     .center {
+        text-align: center;
+        border: 3px solid green;
+      }
+ 
+ </style>
+<body>
+    <div class="container">
+        <div class="jumbotron bg-dark text-white">
+            <div class="center">
+            <h1 >Distracted Driver Detection.</h1>
+            <p>Trained Using KNN.</p>
+        </div>
+        </div>
+        <form action="/" method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <label><b>UPLOAD AN IMAGE AND GET PREDICTIONS.</b></label>
+                <input type="file" name="file" class="form-control-file" required>
+                <button type="submit" class="btn btn-primary mt-4">Submit</button>
+            </div>          
+            
+        </form>
+        <h1 class="text-center">{{pred}}</h1>
+    </div>
+    
+</body>
+
+</html>
